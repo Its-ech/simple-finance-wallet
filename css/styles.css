@@ -1,0 +1,205 @@
+/* reset avalie */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+/* badane */
+body{
+    background-color: #f9f9fb;
+    color: #222;
+    padding:20px;
+    direction: rtl;
+}
+/* index.html */
+
+/* heder */
+.main-header {
+background: linear-gradient(135deg, #7F00FF, #E100FF);
+color: white;
+padding: 20px;
+border-radius: 12px;
+text-align: center;
+margin-bottom: 30px;
+}
+#main-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+/* carts */
+.summary-section {
+    display: flex;
+    justify-content: space-around;
+    flex-warp: warp;
+    margin-bottom: 30px;
+}
+/* style carts */
+.summary-card {
+    flex:1;
+    min-width: 250px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+.summary-card:hover {
+    trnsform: translatey(-4px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* in carts */
+.card-title {
+    font-size: 20px;
+    color: #7F00FF;
+    margin-bottom: 10px;
+}
+/* adad in carts */
+.card-value{
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C2C2C;
+}
+/* but in bottom */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-warp: warp;
+}
+/* style but in bottom */
+.btn{
+    text-decoration: none !important;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3 ease;
+    text-align: center;
+}
+/* + mojodi */
+.btn-primary {
+    background-color: #FF7A00;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #e56600;
+  }
+  /* histori */
+  .btn-secondary {
+    background-color: #2C2C2C;
+    color: white;
+  }
+  .btn-secondary:hover {
+    background-color: #1a1a1a;
+  }
+  /* responsives */
+  @media screen and (max-width:765px){
+    #main-title {
+        font-size: 22px;
+    }
+    /* ston carts */
+    .summary-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .summary-card {
+        width: 90% ;
+    }
+    /* dokme zir ham */
+    .action-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 80%;
+        font-size:15px;
+    }
+  }
+  /* صحفه تراکنش */
+  .form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  #transaction-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+  #transaction-form input,
+#transaction-form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+#transaction-form input:focus,
+#transaction-form select:focus {
+    outline: none;
+    border-color: #8e44ad;
+    box-shadow: 0 0 5px rgba(142,68,173,0.4);
+}
+#save-btn {
+    margin-top:2rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #8e44ad;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transaction: background-color 0.3s ease;
+}
+#save-btn:hover{
+    background-color: #732d91;
+}
+/* link back */
+.form-container .btn-secondary {
+    display: block;
+    margin-top: 2rem; /* افزایش فاصله دکمه از جدول */
+    text-align: center;
+    width: 200px; /* تعیین عرض ثابت برای دکمه */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* صحفه تراکنش ها  */
+
+  .transactions-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  #transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#transactions-table th,
+#transactions-table td {
+    padding: 0.8rem;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+#transactions-table th{
+    background-color: #f2f2f2;
+}
+#transactions-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.transactions-container-btn {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }

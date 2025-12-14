@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد مالی</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- header -->
+     <header class="main-header">
+        <h1 id="main-title">📊 مدیریت مالی شخصی</h1>
+     </header>
+
+     <!-- cart -->
+      <div class="summary-section">
+        <!-- mojodi -->
+         <div class="summary-card" id="balance-card">
+            <h2 class="card-title"> موجودی کل</h2>
+            <p class="card-value" id="total-balance">تومان</p>
+         </div>
+         <!-- درامد -->
+          <div class="summary-card" id="income-card">
+            <h2 class="card-title">درامد کل</h2>
+            <p class="card-value" id="total-income">تومان</p>
+          </div>
+          <!-- hazine -->
+           <div class="summary-card" id="expense-card">
+            <h2 class="card-title">هزینه کل</h2>
+            <p class="card-value" id="total-expense">تومان</p>
+           </div>
+      </div>
+      <!-- تغییرات -->
+       <div class="action-buttons">
+        <a href="add.html" id="add-transaction" class="btn btn-primary">
+            ➕ تراکنش جدید
+        </a>
+        <a href="transactions.html" class="btn btn-secondary">📋 تاریخچه تراکنش‌ها</a>
+       </div>
+
+       <script src="js/main.js"></script>
+</body>
+</html>
